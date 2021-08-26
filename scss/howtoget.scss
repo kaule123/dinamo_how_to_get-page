@@ -1,0 +1,124 @@
+@import "_header";
+@import "_dinamo_howtoget_navigator";
+@import "_dinamo_howtoget_slider";
+@import "_dinamo_howtoget_statistics";
+@import "_footer";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,400;1,700&family=Roboto:wght@400;500;700&display=swap');
+
+.body {
+  font-family: Roboto;
+}
+.wrapper {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 1300px) {
+  .wrapper {
+    max-width: 1140px;
+    padding: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+   .wrapper {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 540px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: none;
+    width: 100%;
+    padding: 0 8px;
+    margin: 0 auto;
+  }
+}
+
+.slogan {
+  max-width: 1270px;
+  margin: 0px auto 43px auto;
+  padding: 0 20px;
+  &__title {
+    margin-bottom: 12px;
+    font-family: Roboto Condensed;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+  &__adress {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #140605;
+  }
+}
+
+@media (max-width: 1300px) {
+  .slogan {
+    max-width: 1140px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slogan {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slogan {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    margin-bottom: 27px;
+    max-width: 540px;
+    padding: 0 10px;
+    &__title {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    &__adress {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .slogan {
+    max-width: none;
+    width: 100%;
+    padding: 0 8px;
+    margin: 0 auto;
+  }
+}
+
+.google__map {
+  width: 100%;
+  height: 571px;
+  margin-bottom: 88px;
+}
+@media (max-width: 768px) {
+  .google__map {
+    margin-bottom: 40px;
+  }
+}

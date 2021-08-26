@@ -1,0 +1,235 @@
+.footer {
+  padding: 32px 0;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background: linear-gradient(180deg, #594E4B 0%, #453936 100%);
+  color: #FFFFFF;
+  a {
+    color: #FFFFFF;
+  }
+  &__container {
+    max-width: 1270px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  &__nav {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+    &-list1 {
+      li {
+        margin-bottom: 31px;
+        //a {      }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-list2 {
+      &-title {
+        margin-bottom: 25px;
+      }
+      &-socials {
+        display: flex;
+        align-items: center;
+        a {
+          margin-left: 24px;
+          display: block;
+          width: 32px;
+          height: 32px;
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+        a:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    &-mailing {
+      &-title {
+        margin-bottom: 13px;
+      }
+      &-form {
+        display: flex;
+        input[type="text"] {
+          width: 324px;
+          height: 50px;
+          padding: 0 16px;
+        }
+        input[type="text"]::placeholder {
+          color: #A09999;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+        }
+        &-subscribe {
+          cursor: pointer;
+          margin-left: 8px;
+          width: 163px;
+          padding: 15px;
+          background: linear-gradient(180deg, #C89555 0%, #9E6D2F 100%);
+          box-shadow: 0px 1px 4px rgba(34, 34, 34, 0.3);
+          border-radius: 2px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #FFFFFF;
+        }
+        &-subscribe:hover {
+          background: #9E6D2F;
+        }
+        &-subscribe:disabled {
+          background: #C2A98A;
+        }
+
+      }
+    }
+  }
+
+  &__rights {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A09999;
+  }
+}
+
+@media (max-width: 1300px) {
+  .footer {
+    &__container {
+      max-width: 1140px;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__container {
+      max-width: 960px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 24px 0;
+    font-family: Roboto;
+    &__container {
+      max-width: 960px;
+      padding: 0 20px;
+    }
+    
+    &__nav {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+      &-list1 {
+        margin-right: 50px;
+        li {
+          margin-bottom: 39px;
+          //a{}
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &-list2 {
+        margin-right: 50px;
+        &-title {
+          margin-bottom: 16px;
+        }
+        &-socials {
+          margin-bottom: 48px;
+          a {
+            margin-left: 14px;
+            //img{}
+          }
+        }
+      }
+      &-mailing {
+        display: flex;
+        flex-direction: column;
+        &-title {
+          margin-bottom: 13px;
+        }
+        &-form {
+          display: flex;
+          flex-direction: column;
+          input[type="text"] {
+            margin-bottom: 16px;
+            width: 344px;
+            max-width: 100%;
+          }
+          //input[type="text"]::placeholder {}
+          &-subscribe {
+            max-width: 100%;
+            margin-left: 0px;
+            width: 344px;
+            max-width: 100%;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  
+    //&__rights {}
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__container {
+      max-width: 540px;
+      padding: 0 8px;
+    }
+    &__nav {
+      &-list1 {
+        margin-right: 52px;
+      }
+      &-list2 {
+        width: 172px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {  
+    &__nav {      
+    &-mailing {
+        &-form {
+          input[type="text"] {
+            margin-bottom: 16px;
+            width: 100%;
+          }
+          //input[type="text"]::placeholder {}
+          &-subscribe {
+            margin-left: 0px;
+            width: 100%;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  
+    //&__rights {}
+  }
+
+}
